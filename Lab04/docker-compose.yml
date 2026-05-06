@@ -1,0 +1,20 @@
+services:
+  ml-api:
+    build: .
+    container_name: flask-ml-api-compose
+    ports:
+      - "5000:5000"
+    networks:
+      - ml-network
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:alpine
+    container_name: redis-service
+    networks:
+      - ml-network
+
+networks:
+  ml-network:
+    driver: bridge
