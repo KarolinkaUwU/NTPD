@@ -21,3 +21,15 @@ W pliku YAML zdefiniowano zadanie wykonywane na środowisku `ubuntu-latest`. Wor
 Po wypchnięciu zmian do repozytorium workflow został uruchomiony w zakładce `Actions` na GitHubie. Uruchomienie zakończyło się statusem `Success`, a job `test` został wykonany poprawnie.
 
 W szczegółach wykonania workflow widoczny był etap `Run unit tests`, w którym uruchomiono polecenie `pytest test_model.py`. Testy zakończyły się wynikiem `4 passed`, co potwierdza, że wszystkie testy jednostkowe przygotowane w Zadaniu 1 przeszły poprawnie w środowisku GitHub Actions.
+
+## Zadanie 3. Automatyczne budowanie obrazu Dockera i jego publikacja
+
+W ramach zadania zaawansowanego przygotowano automatyczne budowanie i publikowanie obrazu Dockera za pomocą GitHub Actions. W katalogu `Lab06` znajdował się plik `Dockerfile`, który pozwala zbudować obraz aplikacji ML na podstawie kodu projektu oraz zależności zapisanych w pliku `requirements.txt`.
+
+Następnie w repozytorium utworzono dodatkowy workflow GitHub Actions o nazwie `Lab06 Docker Build and Publish`. Konfiguracja została zapisana w pliku `.github/workflows/lab06-docker.yml`.
+
+Workflow został skonfigurowany tak, aby uruchamiał się po wykonaniu `push` na gałąź główną repozytorium. W ramach działania workflow pobierany jest kod repozytorium, wykonywane jest logowanie do GitHub Container Registry, a następnie budowany jest obraz Dockera z katalogu `Lab06`.
+
+Obraz został oznaczony nazwą `ghcr.io/karolinkauwu/lab06-ml-cicd` oraz tagami `latest` i skrótem commita. Po zakończeniu budowania obraz został wypchnięty do GitHub Container Registry.
+
+Poprawność publikacji zweryfikowano w logach GitHub Actions oraz w zakładce `Packages` na profilu GitHub. Widoczny był pakiet `lab06-ml-cicd`, opublikowany z repozytorium `KarolinkaUwU/NTPD`. Oznacza to, że automatyczne budowanie i publikowanie obrazu Dockera działa poprawnie.
