@@ -1,0 +1,4 @@
+product_category,department,margin_level,number_of_transactions,total_quantity,total_sales,avg_transaction_value
+Electronics,Technology,Low,342,849,156905,458.79
+Clothing,Fashion,High,351,894,155580,443.25
+Beauty,Personal Care,Medium,307,771,143515,467.48
