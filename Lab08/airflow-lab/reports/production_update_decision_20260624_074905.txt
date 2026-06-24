@@ -1,0 +1,6 @@
+Decyzja o aktualizacji modelu produkcyjnego
+Nowy model: /opt/airflow/models/rf_model_20260624_074903.pkl
+Model produkcyjny: /opt/airflow/models/production/current_model.pkl
+Accuracy nowego modelu: 0.84
+Accuracy starego modelu: None
+Decyzja: Brak wcześniejszego modelu produkcyjnego. Nowy model ustawiono jako model produkcyjny.

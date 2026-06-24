@@ -1,0 +1,7 @@
+Raport walidacji modelu
+Model: RandomForestClassifier
+Nowy model: /opt/airflow/models/rf_model_20260624_074903.pkl
+Accuracy nowego modelu: 0.8400
+Model produkcyjny: brak
+Accuracy starego modelu: brak
+Wynik porównania: Brak wcześniejszego modelu produkcyjnego do porównania.
