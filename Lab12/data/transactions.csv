@@ -1,0 +1,21 @@
+event_time,user_id,category,amount,status
+2026-05-01 10:00:00,u001,books,39.99,paid
+2026-05-01 10:01:00,u002,electronics,149.90,paid
+2026-05-01 10:02:00,u003,books,25.50,cancelled
+2026-05-01 10:03:00,u004,clothes,89.99,paid
+2026-05-01 10:04:00,u005,electronics,299.00,pending
+2026-05-01 10:05:00,u006,books,59.99,paid
+2026-05-01 10:06:00,u007,electronics,499.00,paid
+2026-05-01 10:07:00,u008,clothes,120.00,paid
+2026-05-02 09:15:00,u009,books,19.99,paid
+2026-05-02 09:30:00,u010,electronics,799.00,paid
+2026-05-02 10:00:00,u011,clothes,149.99,cancelled
+2026-05-02 10:20:00,u012,beauty,79.99,paid
+2026-05-03 11:00:00,u013,books,45.00,paid
+2026-05-03 11:10:00,u014,beauty,120.50,paid
+2026-05-03 11:30:00,u015,electronics,1299.00,paid
+2026-05-04 12:00:00,u016,clothes,199.99,paid
+2026-05-04 12:15:00,u017,books,15.99,pending
+2026-05-04 12:30:00,u018,beauty,59.99,paid
+2026-05-05 13:00:00,u019,electronics,349.99,paid
+2026-05-05 13:30:00,u020,clothes,89.90,paid
